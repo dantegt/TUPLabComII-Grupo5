@@ -1,4 +1,4 @@
-# TUPLabComII-Grupo5
+# TUPLabComII - Grupo5 - Pereyra Regolf
 Proyecto HTML Pereyra Regolf para TUP Laboratorio de Programación II (Berger)
 
 ## Tema 2: Portafolio de desarrollador Web
