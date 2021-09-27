@@ -8,3 +8,49 @@ body {
     color: white;
     padding: 1em;
 }
+
+#hero {
+    background: rgb(255, 255, 255);
+    color: rgb(82, 82, 82);
+}
+
+#hero.img {
+    margin: 0px;
+}
+
+#saludo {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#social-bar {
+    background: rgb(21, 97, 47);
+    text-align: center;
+}
+
+#principal {
+    background: rgb(158, 206, 235);
+    color: rgb(0, 27, 44);
+    padding: 1em;
+}
+
+#sobre-mi {
+   font-size: 1.5em;
+}
+
+#frameworks li {
+    list-style-type: none;
+}
+
+#contacto {
+    background: rgb(19, 35, 124);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+#copyright {
+    color: rgb(84, 152, 230);
+}
