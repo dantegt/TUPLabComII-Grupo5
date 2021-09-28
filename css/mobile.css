@@ -6,7 +6,14 @@ body {
 #encabezado {
     background: orange;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
+}
+
+#encabezado li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
 }
 
 #hero {
@@ -28,6 +35,13 @@ body {
 #social-bar {
     background: rgb(21, 97, 47);
     text-align: center;
+    padding: 0.2em;
+}
+
+#social-bar img{
+    height: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #principal {
@@ -37,10 +51,21 @@ body {
 }
 
 #sobre-mi {
-   font-size: 1.5em;
+   font-size: 1.2em;
+}
+
+#proyectos {
+    background: rgb(137, 226, 241);
+    padding: 0.4em;
+    text-align: center;
+}
+
+#frameworks {
+    text-align: center;
 }
 
 #frameworks li {
+    display: inline;
     list-style-type: none;
 }
 
