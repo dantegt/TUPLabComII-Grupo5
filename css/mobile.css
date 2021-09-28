@@ -16,6 +16,11 @@ body {
     padding-left: 0.2em;
 }
 
+#encabezado a, a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 #hero {
     background: rgb(255, 255, 255);
     color: rgb(82, 82, 82);
@@ -67,6 +72,10 @@ body {
 #frameworks li {
     display: inline;
     list-style-type: none;
+}
+
+#frameworks li img {
+    height: 4em;
 }
 
 #contacto {
