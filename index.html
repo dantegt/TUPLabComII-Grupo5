@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dante Pereyra | Desarrollador Web</title>
     <meta name="description" content="Soy un Desarrollador Web con amplia experiencia en Frontend y en tecnologías como Bootstrap, Angular y React.">
-    <meta property="og:title" content="Dante Pereyra | Desarrollador Web">
-    <meta property="og:url" content="https://desarrolloweb.tk/" />
-    <meta property="og:description" content="Soy un Desarrollador Web con amplia experiencia en Frontend y en tecnologías como Bootstrap, Angular y React.">
-    <meta property="og:image" content="images/image-placeholder-300x200.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mobile.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #encabezado {
+            background: orange;
+            color: white;
+            padding: 1em;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,17 +28,18 @@
     <div id="encabezado">
         <div id="nombre-menu">Leandro Regolf</div>
         <ul id="links">
-            <li>Sobre mi</li>
-            <li>Proyectos</li>
-            <li>Skills</li>
-            <li>contacto</li>
+            <li><a href="#sobre-mi">Bio</a></li>
+            <li><a href="#mandioca">Mandioca</a></li>
+            <li><a href="#mamablue">MamaBlue</a></li>
+            <li><a href="#trencity">Trencity</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </div>
 
     <header id="hero">
         <div id="saludo">
             <h1>¡Hola!</h1>
-            <h2>Me llamo Dante Pereyra y soy Desarrollador Web</h2>
+            <h2>Me llamo Leandro Regolf y soy Desarrollador Web</h2>
         </div>
         <img src="images/leandro.png" alt="Leandro Regolf" id="foto-hero">
         <div id="social-bar">
@@ -42,23 +50,58 @@
     </header>
 
     <main id="principal" >
-        <div id="sobre-mi">fgdd
+        <div id="sobre-mi">
+            Soy desarrollador web desde 2010, junto con Diseñadores Web formo un equipo con el que llevamos a cabo Sitios Web
+            con las últimas tendencias en diseño y programación para clientes pequeños y grandes.Mantenemos una estructura
+            que nos permite desarrollar Sitios Web integrales para cada caso. Trabajamos de manera conjunta con nuestros
+            clientes para lograr una rápida y eficaz solución a cada problema, asesorando y coordinando hasta el último detalle.
         </div>
 
-        <div id="proyectos">dfgdfgdfg
-        </div>
+        <main id="proyectos">
+            <div class="proyecto" id="mandioca">
+                <img src="images/image-placeholder-300x200.png" alt="">
+                <div class="descripcion">
+                    <h3>Mandioca</h3>
+                    <a href="http://www.estacionmandioca.com/">www.estacionmandioca.com</a>
+                    <p>ESTACIÓN MANDIOCA de ediciones s.a, una casa de ediciones genuinamente argentina. En ella se reúne un equipo
+                        experimentado y joven de la industria del libro escolar, en un proyecto común bajo la certeza de que la
+                        educación constituye el mejor nutriente social para un ser humano libre, exitoso y feliz.</p>
+                </div>
+            </div>
+            <div class="proyecto" id="mamablue">
+                <img src="images/image-placeholder-300x200.png" alt="">
+                <div class="descripcion">
+                    <h3>Mumablue</h3>
+                    <a href="https://www.mumablue.com/">www.mumablue.com</a>
+                    <p>En Mumablue creamos cuentos personalizados únicos para peques únicos. No hay ningún libro personalizado igual
+                        porque cada peque es especial. Nuestros cuentos personalizados para niños y niñas contribuyen a que los peques
+                        se enamoren de la lectura de una forma divertida. Leer cuentos infantiles ricos en valores, vivir historias y
+                        aventuras, es también aprender. Queremos formar parte de este aprendizaje lúdico y divertido.
+                </div>
+            </div>
+            <div class="proyecto" id="trencity">
+                <img src="images/image-placeholder-300x200.png" alt="">
+                <div class="descripcion">
+                    <h3>Trencity</h3>
+                    <a href="http://trencity.com.ar/">trencity.com.ar</a>
+                    <p>Trencity es un sistema de vías y vehículos coleccionable con piezas encastrables de alta calidad. Trencity
+                        permite armar infinitas variantes y constuir historias que estimulan la imaginación y la creatividad de los niños.
+                        Nuestros diseños son totalmente compatibles con las marcas internacionales. Si ya tiene un trencito de otra marca
+                        puede ampliarlo con Trencity. ¡Es aprender jugando!</p>
+                </div>
+            </div>
+        </main>
 
-        <div id="frameworks">
+        <aside id="frameworks">
             <ul>
-                <li>Frameworks</li>
-                <li>Frameworks</li>
-                <li>Frameworks</li>
-                <li>Frameworks</li>
-                <li>Frameworks</li>
-                <li>Frameworks</li>
-                <li>Frameworks</li>
+                <li class="framework bootstrap">Bootstrap</li>
+                <li class="framework react">React</li>
+                <li class="framework angular">Angular</li>
+                <li class="framework jquery">jQuery</li>
+                <li class="framework wordpress">Wordpress</li>
+                <li class="framework django">Django</li>
             </ul>
-        </div>
+        </aside>
 
         <div id="referencias">
         </div>
