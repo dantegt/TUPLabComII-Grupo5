@@ -10,15 +10,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
+        }
+
+        ul {
+            padding-inline-start: 0;
         }
 
         #encabezado {
             background: orange;
             color: white;
             padding: 0.5em;
+            position: fixed;
+            top: 0;
+            width: 100%;
         }
 
         #encabezado li {
@@ -36,6 +48,7 @@
         #hero {
             background: rgb(255, 255, 255);
             color: rgb(82, 82, 82);
+            padding-top: 30%;
         }
 
         #hero.img {
@@ -68,7 +81,9 @@
         }
 
         #sobre-mi {
-        font-size: 1.2em;
+            font-size: 1.2em;
+            padding-top: 25%;
+            margin-top: -25%;
         }
 
         #proyectos {
@@ -88,6 +103,11 @@
 
         #frameworks li img {
             height: 4em;
+        }
+
+        .proyecto {
+            padding-top: 25%;
+            margin-top: -25%;
         }
 
         #contacto {
@@ -133,13 +153,15 @@
 
     <main id="principal" >
         <div id="sobre-mi">
-            Soy desarrollador web desde 2010, junto con Diseñadores Web formo un equipo con el que llevamos a cabo Sitios Web
-            con las últimas tendencias en diseño y programación para clientes pequeños y grandes.Mantenemos una estructura
-            que nos permite desarrollar Sitios Web integrales para cada caso. Trabajamos de manera conjunta con nuestros
-            clientes para lograr una rápida y eficaz solución a cada problema, asesorando y coordinando hasta el último detalle.
+            <h3>Sobre mi</h3>
+            <p>Soy desarrollador web desde 2010, junto con Diseñadores Web formo un equipo con el que llevamos a cabo Sitios Web
+                con las últimas tendencias en diseño y programación para clientes pequeños y grandes.Mantenemos una estructura
+                que nos permite desarrollar Sitios Web integrales para cada caso. Trabajamos de manera conjunta con nuestros
+                clientes para lograr una rápida y eficaz solución a cada problema, asesorando y coordinando hasta el último detalle.</p>
         </div>
 
         <main id="proyectos">
+            <h2>Proyectos</h2>
             <div class="proyecto" id="mandioca">
                 <img src="images/image-placeholder-300x200.png" alt="">
                 <div class="descripcion">
@@ -175,13 +197,8 @@
         </main>
 
         <aside id="frameworks">
+            <h2>Frameworks</h2>
             <ul>
-                <li class="framework bootstrap">Bootstrap</li>
-                <li class="framework react">React</li>
-                <li class="framework angular">Angular</li>
-                <li class="framework jquery">jQuery</li>
-                <li class="framework wordpress">Wordpress</li>
-                <li class="framework django">Django</li>
                 <li><img src="images/lgo_html.png" alt="html"></li>
                 <li><img src="images/lgo_css.png" alt="css"></li>
                 <li><img src="images/lgo_javascript.png" alt="javascript"></li>
@@ -191,6 +208,25 @@
         </aside>
 
         <div id="referencias">
+            <h2>Referencias</h2>
+            <div class="person">
+                <div class="nombre">Jose Gonzales</div>
+                <div class="empresa">Mandioca</div>
+                <div class="telefono">11 4256-7890</div>
+                <div class="email">jgonzales@estacionmandioca.com</div>
+            </div>
+            <div class="person">
+                <div class="nombre">Maribel Medina</div>
+                <div class="empresa">Mamablue</div>
+                <div class="telefono">42 2345-1233</div>
+                <div class="email">maribel@mamablue.com</div>
+            </div>
+            <div class="person">
+                <div class="nombre">Roger Rabbit</div>
+                <div class="empresa">Trencity</div>
+                <div class="telefono">11 4234-9900</div>
+                <div class="email">info@trencity.com.ar</div>
+            </div>
         </div>
     </main>
 
