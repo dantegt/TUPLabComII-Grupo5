@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dante Pereyra | Desarrollador Web</title>
+    <title>Leandro Regolf | Desarrollador Web</title>
     <meta name="description" content="Soy un Desarrollador Web con amplia experiencia en Frontend y en tecnologías como Bootstrap, Angular y React.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,15 @@
             padding-inline-start: 0;
         }
 
+        h3 {
+            color: orange;
+        }
+
+        #links {
+            margin: 0.5em 0;
+            font-size: 0.8em;
+        }
+
         #encabezado {
             background: orange;
             color: white;
@@ -40,19 +49,25 @@
             padding-left: 0.2em;
         }
 
-        #encabezado a, a:link, a:visited {
+        #encabezado a, #encabezado a:link, #encabezado a:visited {
             color: white;
             text-decoration: none;
+        }
+
+        #nombre-menu {
+            font-size: 1.3em;
+            font-weight: 800;
         }
 
         #hero {
             background: rgb(255, 255, 255);
             color: rgb(82, 82, 82);
-            padding-top: 30%;
+            padding-top: 5em;
         }
 
-        #hero.img {
+        #foto-hero {
             margin: 0px;
+            max-width: 100%;
         }
 
         #saludo {
@@ -63,9 +78,9 @@
         }
 
         #social-bar {
-            background: rgb(21, 97, 47);
+            background: orange;
             text-align: center;
-            padding: 0.2em;
+            padding: 0.5em;
         }
 
         #social-bar img{
@@ -75,9 +90,9 @@
         }
 
         #principal {
-            background: rgb(158, 206, 235);
+            background: rgb(243 243 243);
             color: rgb(0, 27, 44);
-            padding: 1em;
+            padding: 2em;
         }
 
         #sobre-mi {
@@ -86,14 +101,17 @@
             margin-top: -25%;
         }
 
-        #proyectos {
-            background: rgb(137, 226, 241);
-            padding: 0.4em;
-            text-align: center;
+        .proyecto {
+            padding: 25% 0 10%;
+            margin-top: -20%;
         }
 
-        #frameworks {
-            text-align: center;
+        .proyecto img {
+            border-radius: 1em;
+        }
+
+        .descripcion h3 {
+            margin-bottom: 0;
         }
 
         #frameworks li {
@@ -102,12 +120,18 @@
         }
 
         #frameworks li img {
-            height: 4em;
+            width: 18%;
         }
 
-        .proyecto {
-            padding-top: 25%;
-            margin-top: -25%;
+        .person {
+            background: white;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 1em;
+        }
+
+        .person .nombre {
+            font-weight: 800;
         }
 
         #contacto {
@@ -120,15 +144,19 @@
         #copyright {
             color: rgb(84, 152, 230);
         }
+
+        #whatsapp { 
+            color: white;
+        }
     </style>
 </head>
 <body>
 
 <div id="contenedor">
     <div id="encabezado">
-        <div id="nombre-menu"><b>Leandro Regolf</b></div>
+        <div id="nombre-menu">Leandro Regolf</div>
         <ul id="links">
-            <li><a href="#sobre-mi">Bio</a></li>
+            <li><a href="#sobre-mi">Yo</a></li>
             <li><a href="#mandioca">Mandioca</a></li>
             <li><a href="#mamablue">MamaBlue</a></li>
             <li><a href="#trencity">Trencity</a></li>
@@ -141,7 +169,7 @@
             <h1>¡Hola!</h1>
             <h2>Me llamo Leandro Regolf y soy Desarrollador Web</h2>
         </div>
-        <img src="images/hero.png" alt="Leandro Regolf" id="foto-hero">
+        <img src="images/leandro.jpeg" alt="Leandro Regolf" id="foto-hero">
         <div id="social-bar">
             <a href="#github" target="_blank"><img src="images/icn_instagram.png" alt="instagram"></a>
             <a href="#twitter" target="_blank"><img src="images/icn_twitter.png" alt="twitter"></a>
@@ -163,7 +191,7 @@
         <main id="proyectos">
             <h2>Proyectos</h2>
             <div class="proyecto" id="mandioca">
-                <img src="images/image-placeholder-300x200.png" alt="">
+                <img src="images/mandioca.png" alt="Mandioca">
                 <div class="descripcion">
                     <h3>Mandioca</h3>
                     <a href="http://www.estacionmandioca.com/">www.estacionmandioca.com</a>
@@ -173,7 +201,7 @@
                 </div>
             </div>
             <div class="proyecto" id="mamablue">
-                <img src="images/image-placeholder-300x200.png" alt="">
+                <img src="images/mamablue.png" alt="Mamablue">
                 <div class="descripcion">
                     <h3>Mumablue</h3>
                     <a href="https://www.mumablue.com/">www.mumablue.com</a>
@@ -184,7 +212,7 @@
                 </div>
             </div>
             <div class="proyecto" id="trencity">
-                <img src="images/image-placeholder-300x200.png" alt="">
+                <img src="images/trencity.png" alt="Trencity">
                 <div class="descripcion">
                     <h3>Trencity</h3>
                     <a href="http://trencity.com.ar/">trencity.com.ar</a>
@@ -210,21 +238,18 @@
         <div id="referencias">
             <h2>Referencias</h2>
             <div class="person">
-                <div class="nombre">Jose Gonzales</div>
-                <div class="empresa">Mandioca</div>
-                <div class="telefono">11 4256-7890</div>
-                <div class="email">jgonzales@estacionmandioca.com</div>
+                <div class="nombre">Leticia Groizard</div>
+                <em class="empresa">Editorial Mandioca</em>
+                <div class="email">lgroizard@estacionmandioca.com</div>
             </div>
             <div class="person">
-                <div class="nombre">Maribel Medina</div>
-                <div class="empresa">Mamablue</div>
-                <div class="telefono">42 2345-1233</div>
-                <div class="email">maribel@mamablue.com</div>
+                <div class="nombre">Cristina Rodríguez Blanco</div>
+                <em class="empresa">Mumablue</em>
+                <div class="email">maribel@mumablue.com</div>
             </div>
             <div class="person">
-                <div class="nombre">Roger Rabbit</div>
-                <div class="empresa">Trencity</div>
-                <div class="telefono">11 4234-9900</div>
+                <div class="nombre">Mariano Sánchez</div>
+                <em class="empresa">Trencity</em>
                 <div class="email">info@trencity.com.ar</div>
             </div>
         </div>
@@ -234,7 +259,7 @@
         <p><b>¡Ahora contame sobre tu proyecto!</b></p>
         <p>desarrolloweb@gmail.com</p>
         <p>+54 11 123-4567</p>
-        <p><a href="https://wa.me/54111234567" target="_blank">whatsapp</a></p>
+        <p><a href="https://wa.me/54111234567" target="_blank" id="whatsapp">Enviame un Whatsapp</a></p>
 
         <div id="copyright">
             © 2021 Desarrollador Web
