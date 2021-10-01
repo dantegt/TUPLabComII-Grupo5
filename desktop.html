@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leandro Regolf | Desarrollador Web</title>
+    <title>Dante Pereyra | Desarrollador Web</title>
     <meta name="description" content="Soy un Desarrollador Web con amplia experiencia en Frontend y en tecnologías como Bootstrap, Angular y React.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,28 +18,51 @@
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
+            background: #fafafa;
         }
 
         ul {
             padding-inline-start: 0;
         }
 
+        h2 {
+            color: rgb(82, 82, 82);
+        }
+
         h3 {
             color: orange;
         }
 
+        #contenedor {
+            width: 960px;
+            margin: 0 auto;
+        }
+
         #links {
-            margin: 0.5em 0;
-            font-size: 0.8em;
+            font-size: 0.9em;
+            float: right;
+            line-height: 4em;
+            padding-right: 6em;
+        }
+
+        #links li {
+            margin-left: 1em;
         }
 
         #encabezado {
             background: orange;
             color: white;
-            padding: 0.5em;
             position: fixed;
             top: 0;
-            width: 100%;
+            width: 960px;
+        }
+
+        #nombre-menu {
+            font-size: 1.5em;
+            font-weight: 800;
+            padding: 1em;
+            width: 30%;
+            float: left;
         }
 
         #encabezado li {
@@ -54,11 +77,6 @@
             text-decoration: none;
         }
 
-        #nombre-menu {
-            font-size: 1.3em;
-            font-weight: 800;
-        }
-
         #hero {
             background: rgb(255, 255, 255);
             color: rgb(82, 82, 82);
@@ -71,22 +89,33 @@
         }
 
         #saludo {
-            padding-left: 1em;
-            padding-right: 1em;
-            padding-top: 0px;
+            padding-left: 2em;
+            padding-right: 0em;
+            padding-top: 4em;
             padding-bottom: 0px;
+        }
+
+        #saludo h1 {
+            font-size: 4em;
+        }
+
+        #saludo h2 {
+            font-size: 1.7em;
         }
 
         #social-bar {
             background: orange;
             text-align: center;
-            padding: 0.5em;
+            padding: 2em 1em;
         }
 
-        #social-bar img{
-            height: 2em;
-            padding-left: 1em;
-            padding-right: 1em;
+        #social-bar a {
+            display: block;
+        }
+
+        #social-bar img {
+            width: 3em;
+            padding: 1em 0;
         }
 
         #principal {
@@ -97,13 +126,22 @@
 
         #sobre-mi {
             font-size: 1.2em;
-            padding-top: 25%;
-            margin-top: -25%;
+            padding-top: 10%;
+            margin-top: -12%;
+        }
+
+        .fila {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #proyectos {
+            width: 60%;
         }
 
         .proyecto {
-            padding: 25% 0 10%;
-            margin-top: -20%;
+            padding: 20% 0 2em;
+            margin-top: -15%;
         }
 
         .proyecto img {
@@ -113,15 +151,20 @@
 
         .descripcion h3 {
             margin-bottom: 0;
+            font-size: 1.6em
+        }
+
+        #frameworks {
+            text-align: center;
         }
 
         #frameworks li {
-            display: inline;
             list-style-type: none;
+            margin: 2em;
         }
 
         #frameworks li img {
-            width: 18%;
+            width: 40%;
         }
 
         .person {
@@ -155,7 +198,7 @@
 
 <div id="contenedor">
     <div id="encabezado">
-        <div id="nombre-menu">Leandro Regolf</div>
+        <div id="nombre-menu">Dante Pereyra</div>
         <ul id="links">
             <li><a href="#sobre-mi">Yo</a></li>
             <li><a href="#mandioca">Mandioca</a></li>
@@ -165,12 +208,12 @@
         </ul>
     </div>
 
-    <header id="hero">
+    <header id="hero" class="fila">
         <div id="saludo">
             <h1>¡Hola!</h1>
-            <h2>Me llamo Leandro Regolf y soy Desarrollador Web</h2>
+            <h2>Me llamo Dante Pereyra y soy Desarrollador Web</h2>
         </div>
-        <img src="images/leandro.jpeg" alt="Leandro Regolf" id="foto-hero">
+        <img src="images/dante.jpeg" alt="Dante Pereyra" id="foto-hero">
         <div id="social-bar">
             <a href="#github" target="_blank"><img src="images/icn_instagram.png" alt="instagram"></a>
             <a href="#twitter" target="_blank"><img src="images/icn_twitter.png" alt="twitter"></a>
@@ -188,7 +231,6 @@
                 que nos permite desarrollar Sitios Web integrales para cada caso. Trabajamos de manera conjunta con nuestros
                 clientes para lograr una rápida y eficaz solución a cada problema, asesorando y coordinando hasta el último detalle.</p>
         </div>
-
         <div class="fila">
             <section id="proyectos">
                 <h2>Proyectos</h2>
@@ -229,31 +271,32 @@
             <aside id="frameworks">
                 <h2>Frameworks</h2>
                 <ul>
-                    <li><img src="images/lgo_html.png" alt="html"></li>
-                    <li><img src="images/lgo_css.png" alt="css"></li>
-                    <li><img src="images/lgo_javascript.png" alt="javascript"></li>
-                    <li><img src="images/lgo_bootstrap.png" alt="bootstrap"></li>
-                    <li><img src="images/lgo_wordpress.png" alt="wordpress"></li>
+                    <li><img src="images/lgo_html.png" alt="html" title="HTML5"></li>
+                    <li><img src="images/lgo_css.png" alt="css" title="CSS3"></li>
+                    <li><img src="images/lgo_javascript.png" alt="javascript" title="Javascript"></li>
+                    <li><img src="images/lgo_bootstrap.png" alt="bootstrap" title="Bootstrap"></li>
+                    <li><img src="images/lgo_wordpress.png" alt="wordpress" title="Wordpress"></li>
                 </ul>
             </aside>
         </div>
-
         <div id="referencias">
             <h2>Referencias</h2>
-            <div class="person">
-                <div class="nombre">Leticia Groizard</div>
-                <em class="empresa">Editorial Mandioca</em>
-                <div class="email">lgroizard@estacionmandioca.com</div>
-            </div>
-            <div class="person">
-                <div class="nombre">Cristina Rodríguez Blanco</div>
-                <em class="empresa">Mumablue</em>
-                <div class="email">maribel@mumablue.com</div>
-            </div>
-            <div class="person">
-                <div class="nombre">Mariano Sánchez</div>
-                <em class="empresa">Trencity</em>
-                <div class="email">info@trencity.com.ar</div>
+            <div class="fila">
+                <div class="person">
+                    <div class="nombre">Leticia Groizard</div>
+                    <em class="empresa">Editorial Mandioca</em>
+                    <div class="email">lgroizard@estacionmandioca.com</div>
+                </div>
+                <div class="person">
+                    <div class="nombre">Cristina Rodríguez Blanco</div>
+                    <em class="empresa">Mumablue</em>
+                    <div class="email">maribel@mumablue.com</div>
+                </div>
+                <div class="person">
+                    <div class="nombre">Mariano Sánchez</div>
+                    <em class="empresa">Trencity</em>
+                    <div class="email">info@trencity.com.ar</div>
+                </div>
             </div>
         </div>
     </main>
